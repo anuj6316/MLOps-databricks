@@ -1,0 +1,12 @@
+# Necessary libraries
+django
+poethepoet
+
+# LangChain
+langchain
+langchain-core
+langchain-community
+langchain-groq
+
+# LangGraph
+langgraph

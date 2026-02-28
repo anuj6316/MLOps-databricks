@@ -1,0 +1,20 @@
+[project]
+name = "mlops-databricks"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "django>=6.0.2",
+    "langchain>=1.2.10",
+    "langchain-community>=0.4.1",
+    "langchain-core>=1.2.16",
+    "langchain-groq>=1.1.2",
+    "langgraph>=1.0.10",
+    "poethepoet>=0.42.1",
+]
+
+[tool.poe.tasks]
+start = "uv run python AgenticAI/manage.py runserver"
+migration = "uv run python AgenticAI/manage.py makemigrations"
+migrate = "uv run python AgenticAI/manage.py migrate"
